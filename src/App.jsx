@@ -100,6 +100,7 @@ function Signup(){
     <button className='signbutt'>Sign Up</button>
     <br />
     <Link to="/login" className='folink'>Already have an account? Login</Link>
+    <br />
     <Link to="/newsletter" className='folink'>Interested in our newsletter? Subscribe here!</Link>
   </form> 
   <footer>

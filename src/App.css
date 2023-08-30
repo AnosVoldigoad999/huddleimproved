@@ -319,4 +319,29 @@ button:hover{
     margin-top: 0px;
     overflow-x: hidden;
   }
+
+  form{
+    width: clamp(190px, 50vw, 220px);
+  }
+
+  .loginbutt{
+    width: clamp(190px, 50vw, 200px);
+  }
+
+  .signform{
+    width: clamp(190px, 50vw, 220px);
+  }
+  
+  .signbutt{
+    width: clamp(190px, 50vw, 200px);
+  }
+
+  .newsletter{
+    width: clamp(190px, 50vw, 220px);
+    
+  }
+
+  .sub{
+    width: clamp(190px, 50vw, 200px);
+  }
 }
