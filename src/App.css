@@ -5,6 +5,7 @@
 body {
   background-image: url(../public/bg-desktop.svg) ;
   background-position: center; 
+  background-repeat: no-repeat ;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
   display: flex;
@@ -176,15 +177,13 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  margin: 150px auto;
+  margin: 50px auto;
 }
 
-.news{
-  max-height: 300px;
-}
 
 .sub{
   margin: 0 auto;
+  border-radius: 5px;
 }
 /*form*/
 

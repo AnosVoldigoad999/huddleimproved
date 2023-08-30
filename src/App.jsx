@@ -100,7 +100,7 @@ function Signup(){
     <button className='signbutt'>Sign Up</button>
     <br />
     <Link to="/login" className='folink'>Already have an account? Login</Link>
-    
+    <Link to="/newsletter" className='folink'>Interested in our newsletter? Subscribe here!</Link>
   </form> 
   <footer>
     <div className='icons'>
@@ -114,6 +114,11 @@ function Signup(){
 
 function Newsletter (){
   return <>
+  <nav>
+  <Link to="/">
+    <img className='logo' alt='logo' />
+    </Link>
+  </nav>
   <form className='news' onSubmit={(e)=>e.preventDefault()}>
   <div className='newsletter'>
     <label htmlFor='newsletteremail'><h2>Subscribe to our newsletter</h2></label>
@@ -121,5 +126,12 @@ function Newsletter (){
     <button className='sub'>Subscribe</button>
   </div>
   </form>
+  <footer>
+    <div className='icons'>
+    <PiFacebookLogoThin className='icon' />
+    <PiTwitterLogoThin className='icon' />
+    <PiInstagramLogoThin className='icon' />
+    </div>
+    </footer>
   </>
 }
