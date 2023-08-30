@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../public/bg-desktop.svg) ;
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  margin-top: clamp(20px, 3vh, 25px);
+  margin-left: 3vw;
+  display: inline-flex;
+  height: calc(75vh - 50px);
+}
+
+nav{
+  margin-top: 5vh;
+  margin-left: 3vw;
+  margin-bottom: 7vh;
+}
+
+.logo {
+  content: url(../public/logo.svg);
+  width: 12vw;
+  min-width: 150px;
+}
+
+.image {
+ content: url(../public/illustration-mockups.svg);
+ width: clamp(720px, 50vw, 750px);
+  height: clamp(500px, 60vh, 510px);
+ 
+}
+
+.everything {
+  margin-top: 5vh;
+  margin-left: clamp(90px, 5vw, 100px);
+}
+
+p{
+  color: hsl(0, 100%, 100%);
+  font-family: open;
+   /*border: 1px solid red; */
+  width: clamp(370px, 27vw, 380px) ;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 15px;
+}
+h1{
+  color: hsl(0, 100%, 100%);
+  font-family: pop;
+  font-weight: 600;
+ line-height: 50px;
+  width: clamp(350px, 40vw, 370px);
+}
+
+footer{
+ display: flex;
+ justify-content: end;
+ min-width: 1290px;
+}
+
+
+@font-face {
+  font-family: pop ; 
+  src:url(../public/poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: open ;
+  src: url(../public/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+button{
+  padding: 15px 20px;
+  border-radius: 30px;
+  border: none;
+  width: 200px;
+  color: hsl(300, 69%, 71%);
+  font-family: open;
+  font-size: 16px;
+  box-shadow: 2px 2px 3px 3px hsl(0, 0%, 30%);
+}
+
+.icon{
+  position: relative;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  color: hsl(0, 100%, 100%) ;
+  right: 20px;
+  /*left: max(800px, 85vw); */
+  /*top: 17vh ;*/
+}
+
+/*hover*/
+button:hover{
+  background-color: hsl(300, 69%, 71%) ;
+  color: hsl(0, 100%, 100%) ;
+  cursor:pointer;
+}
+
+.icon:hover{
+  color: hsl(300, 69%, 71%) ;
+  cursor: pointer;
+}
+
+/*media queries */
+
+
+@media (max-width:600px){
+  body{
+    background-image: url(../public/bg-mobile.svg);
+    overflow-x: hidden;
+  }
+
+  .container{
+     margin-top: clamp(20px, 3vh, 25px);
+     margin-left: 3vw;
+     display: flex;
+     flex-direction: column;
+     height: calc(100vh - 39px);
+     margin: 0 auto;
+   }
+
+   .image {
+   content: url(../public/illustration-mockups.svg);
+   width: 90vw;
+   height: 50vh;
+   margin: 0 auto;
+  }
+
+  .icon{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    color: hsl(0, 100%, 100%) ;
+    left: 0;
+    margin-top: clamp(200px, 30vh, 250px);
+  }
+
+  .everything{
+    margin: clamp(90px, 10vh, 100px) auto ;
+    text-align: center;
+  }
+
+  p{
+    width: max(45vw, 300px);
+    font-weight: 600;
+  }
+
+  h1{
+    font-size: 20px;
+    line-height: 30px;
+    width: max(270px, 45vw) ;
+  }
+
+  .logo {
+    content: url(../public/logo.svg);
+    width: 30vw;
+    min-width: 150px;
+    height: 70px;
+    margin-left: 4.5vw;
+    margin-bottom: 10vh;
+    margin-top: clamp(10px, 2vh, 15px);
+  }
+
+  button{
+    margin-top: 30px;
+    width: 270px;
+  }
+
+  button:hover{
+    background-color:  hsl(0, 100%, 100%) ;
+    color: hsl(300, 69%, 71%);
+  }
+
+  button:active{
+    background-color: hsl(300, 69%, 71%) ;
+    color: hsl(0, 100%, 100%) ;
+  }
+  
+
+  footer{
+    min-width: 95vw;
+    justify-content: center;
+  }
+
+  nav{
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
