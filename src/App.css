@@ -20,9 +20,13 @@ body {
 }
 
 nav{
+  display: flex;
+  flex-direction: row;
   margin-top: 5vh;
   margin-left: 3vw;
   margin-bottom: 7vh;
+  width: 95vw;
+  /*border: 1px solid red;*/
 }
 
 .logo {
@@ -46,7 +50,6 @@ nav{
 p{
   color: hsl(0, 100%, 100%);
   font-family: open;
-   /*border: 1px solid red; */
   width: clamp(370px, 27vw, 380px) ;
   line-height: 30px;
   font-weight: 400;
@@ -66,6 +69,95 @@ footer{
  min-width: 1290px;
 }
 
+.login{
+  font-family: pop ;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 80vw; 
+  min-width: 1290px;
+}
+/*form */
+form{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  align-content: center;
+  font-family: pop;
+  height: calc(80vh - 50px);
+}
+
+.loginbutt{
+  margin: 0 auto;
+}
+
+
+
+input{
+  padding: 20px; 
+  border-radius: 10px;  
+  transition: border 0.5s;
+  border: 3px solid #ccc;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: open;
+  color: hsl(300, 69%, 71%);
+}
+
+label{
+  font-family: pop;
+  color: hsl(0, 100%, 100%);
+}
+
+input:focus {
+  border: 3px solid hsl(300, 69%, 71%);
+}
+
+
+.a{
+  background-color: hsl(0, 100%, 100%); 
+  color: hsl(300, 69%, 71%);
+  border-radius: 20px;
+  padding: 0.25vh 2vw ;
+  text-decoration: none;
+  margin-right: 20px ;
+  box-shadow: none;
+}
+
+.a:hover{
+  background-color: hsl(300, 69%, 71%) ;
+  color: hsl(0, 100%, 100%) ;
+}
+
+.folink{
+  color: hsl(0, 100%, 100%) ;
+  margin: 0 auto;
+}
+
+.newsletterinput{
+  max-width: 500px;
+  padding: 5px 30px;
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.news{
+  max-height: 300px;
+}
+
+.sub{
+  margin: 0 auto;
+}
+/*form*/
 
 @font-face {
   font-family: pop ; 
@@ -85,6 +177,7 @@ button{
   color: hsl(300, 69%, 71%);
   font-family: open;
   font-size: 16px;
+  font-weight: bolder;
   box-shadow: 2px 2px 3px 3px hsl(0, 0%, 30%);
 }
 
