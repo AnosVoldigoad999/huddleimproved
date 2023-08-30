@@ -317,5 +317,6 @@ button:hover{
   nav{
     margin-bottom: 0px;
     margin-top: 0px;
+    overflow-x: hidden;
   }
 }
