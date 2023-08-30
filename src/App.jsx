@@ -90,18 +90,18 @@ function Signup(){
     <img className='logo' alt='logo' />
     </Link>
   </nav>
-  <form onSubmit={(e)=>e.preventDefault()}>
-   <label htmlFor='name'><h2>Full Name</h2></label>
-    <input id='name' type='text' />
-    <label htmlFor='email'><h2>Email</h2></label>
-    <input id='email' type='email' />
-    <label htmlFor='password'><h2>Password</h2></label>
-    <input id='password' type='password' />
-    <button className='loginbutt'>Sign Up</button>
+  <form onSubmit={(e)=>e.preventDefault()} className='signform'>
+   <label htmlFor='name' className='signlabel'><h2>Full Name</h2></label>
+    <input id='name' type='text' className='sign' />
+    <label htmlFor='email' className='signlabel'><h2>Email</h2></label>
+    <input id='email' type='email' className='sign' />
+    <label htmlFor='password' className='signlabel'><h2>Password</h2></label>
+    <input id='password' type='password' className='sign' />
+    <button className='signbutt'>Sign Up</button>
     <br />
     <Link to="/login" className='folink'>Already have an account? Login</Link>
+    
   </form> 
-  <Newsletter />
   <footer>
     <div className='icons'>
     <PiFacebookLogoThin className='icon' />

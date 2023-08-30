@@ -84,14 +84,44 @@ form{
   display: flex;
   flex-direction: column;
   width: 500px;
-  height: 500px;
   align-content: center;
   font-family: pop;
   height: calc(80vh - 50px);
 }
 
+.sign{
+  border-radius: 10px;  
+  transition: border 0.5s;
+  border: 3px solid #ccc;
+  outline: none;
+  font-family: open;
+  color: hsl(300, 69%, 71%);
+  padding: 1px; 
+  margin-bottom: 10px;
+}
+
+.signform{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: clamp(400px, 30vw, 420px);
+  font-family: pop;
+}
+
+.signbutt{
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.signlabel{
+  font-family: pop;
+  color: hsl(0, 100%, 100%);
+}
+
 .loginbutt{
   margin: 0 auto;
+  border-radius: 5px;
 }
 
 
@@ -147,7 +177,7 @@ input:focus {
   flex-direction: column;
   justify-content: center;
   width: 400px;
-  margin: 0 auto;
+  margin: 150px auto;
 }
 
 .news{
