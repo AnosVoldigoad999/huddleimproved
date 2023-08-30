@@ -4,7 +4,6 @@
 
 body {
   background-image: url(../public/bg-desktop.svg) ;
-  background-repeat: no-repeat;
   background-position: center; 
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
@@ -127,7 +126,7 @@ form{
 
 
 input{
-  padding: 20px; 
+  padding: 10px; 
   border-radius: 10px;  
   transition: border 0.5s;
   border: 3px solid #ccc;
