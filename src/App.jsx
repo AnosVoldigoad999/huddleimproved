@@ -29,12 +29,13 @@ function Home (){
   <div className='login'>
     <Link to="/login">
     <button className='a'>
-    <h2>Login</h2>
+      Login
     </button>
     </Link>
   </div>
   </nav>
- <div className="container"> 
+  <main>
+  <div className="container"> 
   <img className='image' alt='image'  />
   <div className='everything'>
     <h1>Build the community your fans will love</h1>
@@ -44,6 +45,11 @@ function Home (){
     </Link>
   </div>
   </div>
+  <div className='subdiv'>
+  <h2 className='subh2' >Subscribe to our newsletter</h2>
+<input className='subinput' typeof='email' /> <button className='subbutt'>Subscribe</button>
+  </div>
+  </main>
   <footer>
     <div className='icons'>
     <PiFacebookLogoThin className='icon' />

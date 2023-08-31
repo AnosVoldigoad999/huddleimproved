@@ -12,10 +12,21 @@ body {
 }
 
 .container{
+  display: inline-flex;
+  height: clamp(420px, 62vh, 450px);
+}
+
+.subh2{
+  color: hsl(0, 100%, 100%);
+  font-family: pop;
+}
+
+main{
   margin-top: clamp(20px, 3vh, 25px);
   margin-left: 3vw;
-  display: inline-flex;
-  height: calc(75vh - 50px);
+  height: calc(100vh - 50px);
+  display: flex;
+  flex-direction: column;
 }
 
 nav{
@@ -36,13 +47,13 @@ nav{
 
 .image {
  content: url(../public/illustration-mockups.svg);
- width: clamp(720px, 50vw, 750px);
-  height: clamp(500px, 60vh, 510px);
+ width: clamp(600px, 50vw, 650px);
+ /* height: clamp(500px, 60vh, 510px); */
  
 }
 
 .everything {
-  margin-top: 5vh;
+  margin-top: 3vh;
   margin-left: clamp(90px, 5vw, 100px);
 }
 
@@ -155,15 +166,24 @@ input:focus {
   border: 3px solid hsl(300, 69%, 71%);
 }
 
+.subinput{
+  width: 35vw;
+}
+
+.subbutt{
+  box-shadow: none;
+}
 
 .a{
-  background-color: hsl(0, 100%, 100%); 
-  color: hsl(300, 69%, 71%);
-  border-radius: 20px;
-  padding: 0.005vh 2vw ;
-  text-decoration: none;
-  margin-right: 20px ;
   box-shadow: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+  color: hsl(300, 69%, 71%);
+  font-family: open;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .a:hover{
@@ -250,14 +270,28 @@ button:hover{
     overflow-x: hidden;
   }
 
+  main{
+    height: calc(100vh - 39px);
+    margin: 0 auto;
+    align-items: center;
+  }
+
   .container{
-     margin-top: clamp(20px, 3vh, 25px);
-     margin-left: 3vw;
-     display: flex;
-     flex-direction: column;
-     height: calc(100vh - 39px);
-     margin: 0 auto;
-     /*overflow-y: scroll;*/
+    margin-top: clamp(20px, 3vh, 25px);
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+     overflow-y: scroll;
+   }
+
+   .subdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .subinput{
+    width: 70vw;
    }
 
    .container::-webkit-scrollbar{
@@ -373,14 +407,35 @@ button:hover{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
   }
-  .container{
+
+  main{
+    height: calc(100vh - 39px);
     margin-top: clamp(20px, 3vh, 25px);
+  }
+
+  .subdiv{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .subinput{
+    width: 70vw;
+   }
+
+  .container{
+    height: 80vh;
     margin-left: 3vw;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 39px);
     margin: 0 auto;
+    overflow-y: scroll;
   }
+
+  .container::-webkit-scrollbar{
+    display: none;
+   }
 
   .image {
   content: url(../public/illustration-mockups.svg);
@@ -484,13 +539,29 @@ button:hover{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
   }
-  .container{
+
+  main{
+    height: calc(100vh - 39px);
     margin-top: clamp(20px, 3vh, 25px);
+  }
+
+  .subdiv{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .subinput{
+    width: 70vw;
+   }
+
+  .container{
     margin-left: 3vw;
     display: flex;
     flex-direction: column;
-    height: calc(100vh - 39px);
     margin: 0 auto;
+    height: 80vh;
     overflow-y: scroll;
   }
 
