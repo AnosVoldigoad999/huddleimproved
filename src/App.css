@@ -350,7 +350,7 @@ button:hover{
 
 /*ipad*/
 
-@media (max-width:768px){
+@media (max-width:768px) and (min-width:601px){
   body{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
@@ -458,4 +458,130 @@ button:hover{
  .sub{
    width: clamp(190px, 50vw, 200px);
  }
+}
+
+
+@media (max-width:1024px) and (min-width:769px) and (min-height:768px) and (max-height:768px){
+  body{
+    background-image: url(../public/bg-mobile.svg);
+    overflow-x: hidden;
+  }
+  .container{
+    margin-top: clamp(20px, 3vh, 25px);
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 39px);
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+
+  .image {
+  content: url(../public/illustration-mockups.svg);
+  width: 90vw;
+  height: 80vh;
+  margin: 0 auto;
+ }
+
+ /*clamp(90px, 10vh, 100px)*/
+
+ .icon{
+   position: relative;
+   width: 35px;
+   height: 35px;
+   margin: 0 5px;
+   color: hsl(0, 100%, 100%) ;
+   left: 0;
+   margin-top: clamp(200px, 30vh, 250px);
+ }
+
+
+
+ .everything{
+   margin: 1.5vh auto ;
+   text-align: center;
+ }
+
+ p{
+   width: max(45vw, 300px);
+   font-weight: 600;
+ }
+
+ h1{
+   font-size: 20px;
+   line-height: 30px;
+   width: max(270px, 45vw) ;
+ }
+
+ .logo {
+   content: url(../public/logo.svg);
+   width: 30vw;
+   min-width: 150px;
+   height: 70px;
+   margin-left: 4.5vw;
+   margin-bottom: 10vh;
+   margin-top: clamp(10px, 2vh, 15px);
+ }
+
+ button{
+   margin-top: 30px;
+   width: 270px;
+ }
+
+ button:hover{
+   background-color:  hsl(0, 100%, 100%) ;
+   color: hsl(300, 69%, 71%);
+ }
+
+ button:active{
+   background-color: hsl(300, 69%, 71%) ;
+   color: hsl(0, 100%, 100%) ;
+ }
+ 
+
+ footer{
+   min-width: 95vw;
+   justify-content: center;
+ }
+
+ nav{
+   margin-bottom: 0px;
+   margin-top: 0px;
+   /*overflow-x: hidden; */
+ }
+
+ .login{
+  font-family: pop ;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  width: 70vw;
+  min-width: 50vw;
+}
+
+ /*form{
+   width: 85vw;
+ }
+
+ .loginbutt{
+   width: clamp(190px, 50vw, 200px);
+ }
+
+ .signform{
+   width: clamp(190px, 50vw, 220px);
+ }
+ 
+ .signbutt{
+   width: clamp(190px, 50vw, 200px);
+ }
+
+ .newsletter{
+   width: clamp(190px, 50vw, 220px);
+   
+ }
+
+ .sub{
+   width: clamp(190px, 50vw, 200px);
+ } */
 }
