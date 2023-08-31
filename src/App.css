@@ -364,7 +364,7 @@ button:hover{
   .image {
   content: url(../public/illustration-mockups.svg);
   width: 90vw;
-  height: 50vh;
+  height: clamp(650px, 50vh, 700px);
   margin: 0 auto;
  }
 
