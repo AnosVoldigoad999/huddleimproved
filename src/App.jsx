@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import {PiTwitterLogoThin, PiInstagramLogoThin, PiFacebookLogoThin} from 'react-icons/pi'
 
@@ -9,14 +9,12 @@ export default function App(){
     setLog(!log);
   }
   return<>
-  <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/newsletter" element={<Newsletter />} />
     </Routes>
-  </BrowserRouter>
   </>
 }
 
