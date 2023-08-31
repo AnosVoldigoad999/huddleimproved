@@ -131,7 +131,7 @@ input{
   transition: border 0.5s;
   border: 3px solid #ccc;
   outline: none;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-family: open;
   color: hsl(300, 69%, 71%);

@@ -66,6 +66,7 @@ function Login(){
     <input id='email' type='email' />
     <label htmlFor='password'><h2>Password</h2></label>
     <input id='password' type='password' />
+    <br />
     <button className='loginbutt'>Login</button>
     <br />
     <Link to="/signup" className='folink'>Don't have an account? Signup</Link>
@@ -95,6 +96,7 @@ function Signup(){
     <input id='email' type='email' className='sign' />
     <label htmlFor='password' className='signlabel'><h2>Password</h2></label>
     <input id='password' type='password' className='sign' />
+    <br />
     <button className='signbutt'>Sign Up</button>
     <br />
     <Link to="/login" className='folink'>Already have an account? Login</Link>
