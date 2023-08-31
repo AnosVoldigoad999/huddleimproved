@@ -88,7 +88,7 @@ function Signup(){
     <img className='logo' alt='logo' />
     </Link>
   </nav>
-  <form onSubmit={(e)=>e.preventDefault()} className='signform'>
+  <form onSubmit={(e)=>e.preventDefault()} >
    <label htmlFor='name' className='signlabel'><h2>Full Name</h2></label>
     <input id='name' type='text' className='sign' />
     <label htmlFor='email' className='signlabel'><h2>Email</h2></label>
