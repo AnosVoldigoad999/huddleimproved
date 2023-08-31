@@ -235,7 +235,7 @@ button:hover{
 /*media queries */
 
 
-@media (max-width:600px){
+@media (max-width:600px) and (orientation:landscape){
   body{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
