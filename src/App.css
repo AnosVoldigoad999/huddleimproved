@@ -330,13 +330,13 @@ button:hover{
   footer{
     min-width: 95vw;
     justify-content: center;
+    position: fixed;
   }
 
   nav{
     margin-bottom: 0px;
     margin-top: 0px;
     overflow-x: hidden;
-    position: fixed;
   }
 
   form{
