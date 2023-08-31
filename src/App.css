@@ -297,7 +297,9 @@ button:hover{
     width: max(270px, 45vw) ;
   }
 
- 
+ .news{
+  overflow-y: visible;
+ }
 
   .logo {
     content: url(../public/logo.svg);
