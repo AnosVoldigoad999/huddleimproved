@@ -128,7 +128,11 @@ form::-webkit-scrollbar{
   border-radius: 5px;
 }
 
-
+.news{
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+}
 
 input{
   padding: 10px; 
@@ -253,12 +257,17 @@ button:hover{
      flex-direction: column;
      height: calc(100vh - 39px);
      margin: 0 auto;
+     overflow-y: scroll;
+   }
+
+   .container::-webkit-scrollbar{
+    display: none;
    }
 
    .image {
    content: url(../public/illustration-mockups.svg);
    width: 90vw;
-   height: 50vh;
+   height: clamp(320px, 50vh, 350px);
    margin: 0 auto;
   }
 
@@ -287,6 +296,8 @@ button:hover{
     line-height: 30px;
     width: max(270px, 45vw) ;
   }
+
+ 
 
   .logo {
     content: url(../public/logo.svg);

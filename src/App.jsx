@@ -43,7 +43,8 @@ function Home (){
     <button>Register</button>
     </Link>
   </div>
-  </div> 
+  </div>
+  <Newsletter /> 
   <footer>
     <div className='icons'>
     <PiFacebookLogoThin className='icon' />
@@ -114,11 +115,6 @@ function Signup(){
 
 function Newsletter (){
   return <>
-  <nav>
-  <Link to="/">
-    <img className='logo' alt='logo' />
-    </Link>
-  </nav>
   <form className='news' onSubmit={(e)=>e.preventDefault()}>
   <div className='newsletter'>
     <label htmlFor='newsletteremail'><h2>Subscribe to our newsletter</h2></label>
@@ -126,12 +122,5 @@ function Newsletter (){
     <button className='sub'>Subscribe</button>
   </div>
   </form>
-  <footer>
-    <div className='icons'>
-    <PiFacebookLogoThin className='icon' />
-    <PiTwitterLogoThin className='icon' />
-    <PiInstagramLogoThin className='icon' />
-    </div>
-    </footer>
   </>
 }
