@@ -4,7 +4,6 @@
 
 body {
   background-image: url(../public/bg-desktop.svg) ;
-  background-position: center; 
   background-repeat: no-repeat ;
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
@@ -343,5 +342,13 @@ button:hover{
 
   .sub{
     width: clamp(190px, 50vw, 200px);
+  }
+}
+
+
+@media (max-width:768px){
+  body{
+    background-image: url(../public/bg-mobile.svg);
+    overflow-x: hidden;
   }
 }
