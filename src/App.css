@@ -90,7 +90,7 @@ form{
 }
 
 form::-webkit-scrollbar{
-  display: hidden;
+  display: none;
 }
 
 /*.sign{
