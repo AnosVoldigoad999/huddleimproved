@@ -294,6 +294,12 @@ button:hover{
     width: 70vw;
    }
 
+   .subbutt{
+    width: 20vw;
+    min-width: 150px;
+   
+   }
+
    .container::-webkit-scrollbar{
     display: none;
    }
