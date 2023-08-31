@@ -86,7 +86,6 @@ form{
   align-content: center;
   font-family: pop;
   height: calc(80vh - 50px);
-  overflow-y: scroll;
 }
 
 /*.sign{
