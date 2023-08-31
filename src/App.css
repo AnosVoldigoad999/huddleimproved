@@ -350,7 +350,7 @@ button:hover{
 
 /*ipad*/
 
-@media (max-width:768px) and (min-width:601px){
+@media (max-width:768px) and (min-width:601px) and (min-height:1024px) and (max-height:1100px){
   body{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
