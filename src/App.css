@@ -299,6 +299,7 @@ button:hover{
 
  .news{
   overflow-y: none;
+  display: flex;
  }
 
   .logo {

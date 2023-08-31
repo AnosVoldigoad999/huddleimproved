@@ -44,7 +44,6 @@ function Home (){
     </Link>
   </div>
   </div>
-  <Newsletter /> 
   <footer>
     <div className='icons'>
     <PiFacebookLogoThin className='icon' />
