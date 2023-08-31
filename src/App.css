@@ -330,7 +330,6 @@ button:hover{
   footer{
     min-width: 95vw;
     justify-content: center;
-    position: fixed;
   }
 
   nav{
