@@ -272,13 +272,13 @@ button:hover{
 
   main{
     height: calc(100vh - 39px);
-    margin: 0 auto;
     align-items: center;
   }
 
   .container{
     margin-top: clamp(20px, 3vh, 25px);
     margin-left: 3vw;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
      overflow-y: scroll;
