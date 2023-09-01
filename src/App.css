@@ -540,7 +540,7 @@ button:hover{
 }
 
 
-@media (max-width:1024px) and (min-width:769px) /*and (min-height:768px) and (max-height:800px)*/{
+@media (max-width:1100px) and (min-width:769px) /*and (min-height:768px) and (max-height:800px)*/{
   body{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
