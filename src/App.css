@@ -306,7 +306,7 @@ button:hover{
 
    .image {
    content: url(../public/illustration-mockups.svg);
-   width: 90vw;
+   width: 80vw;
    height: clamp(320px, 50vh, 350px);
    margin: 0 auto;
   }
@@ -408,7 +408,7 @@ button:hover{
 
 /*ipad*/
 
-@media (max-width:768px) and (min-width:601px) and (min-height:1024px) and (max-height:1100px){
+@media (max-width:768px) and (min-width:601px) /*and (min-height:1024px) and (max-height:1100px)*/{
   body{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
@@ -445,7 +445,7 @@ button:hover{
 
   .image {
   content: url(../public/illustration-mockups.svg);
-  width: 90vw;
+  width: 70vw;
   height: clamp(650px, 50vh, 700px);
   margin: 0 auto;
  }
@@ -540,7 +540,7 @@ button:hover{
 }
 
 
-@media (max-width:1024px) and (min-width:769px) and (min-height:768px) and (max-height:800px){
+@media (max-width:1024px) and (min-width:769px) /*and (min-height:768px) and (max-height:800px)*/{
   body{
     background-image: url(../public/bg-mobile.svg);
     overflow-x: hidden;
@@ -573,7 +573,7 @@ button:hover{
 
   .image {
   content: url(../public/illustration-mockups.svg);
-  width: 90vw;
+  width: 60vw;
   height: 80vh;
   margin: 0 auto;
  }
@@ -680,4 +680,3 @@ button:hover{
    width: clamp(190px, 50vw, 200px);
  } */
 }
-
