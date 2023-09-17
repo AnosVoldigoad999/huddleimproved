@@ -414,7 +414,7 @@ button:hover{
     overflow-x: hidden;
   }
 
-  body::-webkit-scrollbar{
+  main::-webkit-scrollbar{
     display: none;
   }
 
