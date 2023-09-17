@@ -414,6 +414,10 @@ button:hover{
     overflow-x: hidden;
   }
 
+  body::-webkit-scrollbar{
+    display: none;
+  }
+
   main{
     height: calc(100vh - 39px);
     margin-top: clamp(20px, 3vh, 25px);
