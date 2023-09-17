@@ -573,6 +573,10 @@ button:hover{
     overflow-y: scroll;
   }
 
+  .container::-webkit-scrollbar{
+    display: none;
+  }
+
   .image {
   content: url(../public/illustration-mockups.svg);
   width: 60vw;
